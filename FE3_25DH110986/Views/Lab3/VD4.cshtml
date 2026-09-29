@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VD4</title>
+    <script language="Javascript">
+        function ThanhTien() {
+            var sl = parseFloat(document.getElementById("sl").value);
+            var dg = parseFloat(document.getElementById("dg").value);
+            window.document.getElementById("tt").value = sl * dg;
+        }
+    </script>
+</head>
+<body>
+    NHẬP SỐ LƯỢNG VÀ ĐƠN GIÁ
+    <form name="FirstForm" method="post">
+        Đơn giá: <input type="number" id="dg" name="dongia" />
+        Số lượng: <input type="number" id="sl" name="soluong" onchange="ThanhTien()"/>
+        Thành tiền: <input type="text" id="tt" name="tien" />
+    </form>
+    <div>
+
+    </div>
+</body>
+</html>
